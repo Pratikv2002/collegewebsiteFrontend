@@ -1,13 +1,13 @@
 
-import {Navigation} from 'react-minimal-side-navigation';
+// import {Navigation} from 'react-minimal-side-navigation';
 import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 import { Link } from "react-router-dom";
-import {Navigate} from 'react-router-dom';
-import React, { useState } from "react";
+// import {Navigate} from 'react-router-dom';
+import React from "react";
 
 // ICONS
-import * as FaIcons from "react-icons/fa"; //Now i get access to all the icons
-import * as AiIcons from "react-icons/ai";
+// import * as FaIcons from "react-icons/fa"; //Now i get access to all the icons
+// import * as AiIcons from "react-icons/ai";
 
 import { IconContext } from "react-icons";
 
@@ -18,9 +18,9 @@ import { SidebarData } from "./SidebarData";
 import "./SideBar.css"
 
 function SideBar() {
-    const [sidebar, setSidebar] = useState(false);
+    // const [sidebar, setSidebar] = useState(false);
   
-    const showSidebar = () => setSidebar(!sidebar);
+    // const showSidebar = () => setSidebar(!sidebar);
   
   return (
     <>     
