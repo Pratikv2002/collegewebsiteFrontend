@@ -14,9 +14,9 @@ function Navbar() {
         <div className="header">
           <NavLink to="/" className="logo" style={{width:"auto",marginBottom:"0px"}}>
             <span style={{}}></span>
-            <span className="logo-name" >
+            <button className="logo-name" >
               MMIT 
-            </span>
+            </button>
             <span style={{ }}></span>
           </NavLink>
           <div className='menu-div'>
@@ -67,7 +67,7 @@ function Navbar() {
                 activestyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5,}}
               >
-                Compitition Registeration
+                Competition Registration
               </NavLink>
             </li>
             <li>

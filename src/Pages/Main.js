@@ -8,6 +8,7 @@ import Dashboard from "../componant/AdminPanal/Pages/Dashboard"
 import RequestForAdmin from "../componant/AdminPanal/Pages/RequestForAdmin"
 import UploadMaterial from '../componant/AdminPanal/Pages/UploadMaterial';
 import StudyMaterial from './Study_Material/StudyMaterial';
+import TimeTable from './Time Table/Time_Table'
 import DeleteStudyMaterial from '../componant/AdminPanal/Pages/DeleteMaterial';
 import Team from '../componant/AdminPanal/Pages/Team';
 
@@ -24,6 +25,7 @@ function Main() {
         <Route path="/adminRequest" element={<RequestForAdmin/>}/>
         <Route path="/UploadMaterial" element={<UploadMaterial/>}/>
         <Route path="/studyMaterial" element={<StudyMaterial/>}/>
+        <Route path="/TimeTable" element={<TimeTable/>}/>
         <Route path="/deleteStudyMaterial" element={<DeleteStudyMaterial/>}/>
         <Route path="/team" element={<Team/>}/>
       </Routes>

@@ -6,7 +6,7 @@ import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import Footer from '../Home/footer'
-
+import "./Time_Table"
 
 export default function StudyMaterial() {
   const [branch, setbranch] = useState();
@@ -140,11 +140,9 @@ export default function StudyMaterial() {
                 onChange={handleSelectSubject}
                 required
               >
-                <option value="">Select Subject</option>
-                <option value="DSA">DSA</option>
-                <option value="AI">AI</option>
-                <option value="MI">Ml</option>
-                <option value="CS">CS</option>
+                <option value="">Select Division</option>
+                <option value="DSA">A</option>
+                <option value="AI">B</option>
               </select>
             </div>
             <div className="my-3">
