@@ -11,6 +11,7 @@ import StudyMaterial from './Study_Material/StudyMaterial';
 import TimeTable from './Time Table/Time_Table'
 import DeleteStudyMaterial from '../componant/AdminPanal/Pages/DeleteMaterial';
 import Team from '../componant/AdminPanal/Pages/Team';
+// import Home from './Home/Home';
 
 function Main() {
   return (
@@ -28,6 +29,7 @@ function Main() {
         <Route path="/TimeTable" element={<TimeTable/>}/>
         <Route path="/deleteStudyMaterial" element={<DeleteStudyMaterial/>}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/home" element={<Home/>}/>
       </Routes>
     </BrowserRouter>
     </>
