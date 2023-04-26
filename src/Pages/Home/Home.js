@@ -6,8 +6,8 @@ function Home() {
   return (
     <div>
         <Navbar/>
-        <div class="hero-image">
-        </div>
+        <div class="hero-image"></div>
+        
         <Footer/>
     </div>
   )
