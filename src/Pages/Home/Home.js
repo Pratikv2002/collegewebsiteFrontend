@@ -4,6 +4,7 @@ function Home() {
   return (
     <div style={{color:"green"}}>
         <Navbar/>
+        <h1>hello</h1>
     </div>
   )
 }

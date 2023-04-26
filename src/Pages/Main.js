@@ -10,6 +10,7 @@ import UploadMaterial from '../componant/AdminPanal/Pages/UploadMaterial';
 import StudyMaterial from './Study_Material/StudyMaterial';
 import DeleteStudyMaterial from '../componant/AdminPanal/Pages/DeleteMaterial';
 import Team from '../componant/AdminPanal/Pages/Team';
+// import Home from './Home/Home';
 
 function Main() {
   return (
@@ -26,6 +27,7 @@ function Main() {
         <Route path="/studyMaterial" element={<StudyMaterial/>}/>
         <Route path="/deleteStudyMaterial" element={<DeleteStudyMaterial/>}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/home" element={<Home/>}/>
       </Routes>
     </BrowserRouter>
     </>
