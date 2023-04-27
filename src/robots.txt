@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /Axios/axios.js
+Disallow: /Search
+Disallow: /category/
+Disallow: /tag/
+Allow: /
+
+Sitemap: https://mmitedu.in/atom.xml?redirect=false&start-index=1&max-results=500
