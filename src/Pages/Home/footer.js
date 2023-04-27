@@ -7,7 +7,7 @@ import * as bs from "react-icons/bs";
 function Footer() {
   return (
     <footer style={{textAlign: 'center', position: 'fixed', bottom: '0', width: '100%',backgroundColor: '#f5f5f5', padding: '20px' }}>
-      <h1>Made with ❤️ by group no:10</h1>
+      {/* <h1>Made with ❤️ by group no:10</h1> */}
       <p>© 2023 by group no:10. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use | Contact Us</p>
       <a href="https://www.facebook.com/mmit.lohgaon.90"> <i class="fab fa-facebook-f" ></i> </a>
