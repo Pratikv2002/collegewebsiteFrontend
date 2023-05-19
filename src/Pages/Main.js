@@ -1,5 +1,6 @@
 import React from 'react'
 import Home  from './Home/Home'
+import Map  from './MapFolder/Map'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './Login/Index';
 import Register from './Register/Index'
@@ -30,6 +31,7 @@ function Main() {
         <Route path="/deleteStudyMaterial" element={<DeleteStudyMaterial/>}/>
         <Route path="/team" element={<Team/>}/>
         <Route path="/home" element={<Home/>}/>
+        <Route path="/googleMap" element={<Map/>}/>
       </Routes>
     </BrowserRouter>
     </>

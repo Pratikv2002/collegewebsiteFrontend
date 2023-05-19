@@ -7,7 +7,8 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import Footer from '../Home/footer'
 import "./Time_Table"
-
+import GoogleMapReact from 'google-map-react';
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default function StudyMaterial() {
   const [branch, setbranch] = useState();
   const [classes, setclasses] = useState();
@@ -80,7 +81,6 @@ export default function StudyMaterial() {
     <div>
       <Navbar />
       <Footer/>
-
       <div>
         <form action="" method="post" onSubmit={handleOnSubmit}>
           <div
