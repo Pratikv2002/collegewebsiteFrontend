@@ -48,7 +48,7 @@ export default function StudyMaterial() {
       .catch((err) => {
         console.log(err);
       });
-      console.log(studyMaterial);
+      // console.log(studyMaterial);
   }
   const fileType = ["application/pdf"];
   function handlePDFClick(item) {
@@ -156,33 +156,96 @@ export default function StudyMaterial() {
           </div>
         </form>
       </div>
-      <div>
+      <div style={{display:"flex",justifyContent:"center",justifyContent:"space-around"}}>
+        <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><h3>PDF'S</h3>
+        <div>
         {studyMaterial.length >= 0 ? (
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <div style={{  }}>
             {studyMaterial.map((item, i) => {
-              // console.log(item.name);
-              return (
-                <div key={item._id} className="p-1 my-2 mx-2">
-                  <span
-                    onClick={() => handlePDFClick(item)}
-                    className="p-2 pdf"
-                    style={{
-                      backgroundColor: "#e7ffed",
-                      color: "green",
-                      borderRadius: "7px",
-                      border: "1px solid green",
-                    }}
-                  >
-                    {item.FileName}
-                  </span>
-                </div>
-              );
+                if(String(item.FileName).split('.')[1]==="pdf"){
+                   return <div key={item._id} className="p-1 my-2 mx-2">
+                   <span
+                     onClick={() => handlePDFClick(item)}
+                     className="p-2 pdf"
+                     style={{
+                       backgroundColor: "#e7ffed",
+                       color: "green",
+                       borderRadius: "7px",
+                       border: "1px solid green",
+                     }}
+                   >
+                     {String(item.FileName).slice(0,15)+"..."+ String(item.FileName).split('.')[1]}
+                   </span>
+                 </div>
+                }
+              return "";
             })}
           </div>
         ) : (
           ""
         )}
       </div>
+        </div>
+        <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><h3>DOC'S</h3>
+        <div>
+        {studyMaterial.length >= 0 ? (
+          <div style={{  }}>
+            {studyMaterial.map((item, i) => {
+                if(String(item.FileName).split('.')[1]=="doc" || String(item.FileName).split('.')[1]=="docx"){
+                   return <div key={item._id} className="p-1 my-2 mx-2">
+                   <span
+                     onClick={() => handlePDFClick(item)}
+                     className="p-2 pdf"
+                     style={{
+                       backgroundColor: "#e7ffed",
+                       color: "green",
+                       borderRadius: "7px",
+                       border: "1px solid green",
+                     }}
+                   >
+                     {String(item.FileName).slice(0,15)+"..." + String(item.FileName).split('.')[1]}
+                   </span>
+                 </div>
+                }
+              return "";
+            })}
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+      </div>
+        <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><h3>PPT'S</h3>
+        <div>
+        {studyMaterial.length >= 0 ? (
+          <div style={{  }}>
+            {studyMaterial.map((item, i) => {
+                if(String(item.FileName).split('.')[1]==="pptx" || String(item.FileName).split('.')[1]=="ppt"){
+                   return <div key={item._id} className="p-1 my-2 mx-2">
+                   <span
+                     onClick={() => handlePDFClick(item)}
+                     className="p-2 pdf"
+                     style={{
+                       backgroundColor: "#e7ffed",
+                       color: "green",
+                       borderRadius: "7px",
+                       border: "1px solid green",
+                     }}
+                   >
+                     {String(item.FileName).slice(0,15)+"..." + String(item.FileName).split('.')[1]}
+                   </span>
+                 </div>
+                }
+              return "";
+            })}
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+        </div>
+      </div>
+      
       <div>
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js">
        {viewPdf ? <Viewer fileUrl={viewPdf} plugins={[newplugin]}/>:""}

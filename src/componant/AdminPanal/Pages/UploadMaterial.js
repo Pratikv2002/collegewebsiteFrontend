@@ -16,7 +16,7 @@ import axios from "../../../Axios/axios";
 // import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 export default function UploadMaterial() {
-  const fileTypes = ["PDF", "DOC", "PPT", "PPTX"];
+  const fileTypes = ["PDF", "DOC", "PPT", "PPTX","DOCX"];
   const [file, setFile] = useState([]);
 
   const [branch, setbranch] = useState();
