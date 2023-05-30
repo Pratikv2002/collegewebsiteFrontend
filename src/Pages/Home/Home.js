@@ -9,13 +9,147 @@ import { useNavigate } from "react-router-dom";
 import Bot from "../ChatBot/Bot";
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
+import sectionOneImg from './home_image.jpg'
+// import section5BImg from './home_image.jpg'
 function Home() {
   const navigate = useNavigate();
   const [showchatBot, setshowchatBot] = useState(true);
   return (
     <div>
       <Navbar />
-      <div class="hero-image"></div>
+      <section className="section1">
+      <div className="section1Div">
+        <div className="sectionDivA">
+          <h1><span style={{color:"red"}}>MMIT</span> Knowledge Dynamics</h1>
+          <h3>Help Students achieve there Dreams</h3>
+          <h5>
+            Accelerate learing with proven digital math and reading programs
+          </h5>
+          <div className="explore">
+            <h4>Explore:</h4>
+            <div className="exploreDiv">
+              <a href="">Class One</a>
+              <a href="">Class Two</a>
+              <a href="">Class Three</a>
+            </div>
+          </div>
+        </div>
+        <div className="sectionDivB">
+          <img src={sectionOneImg} alt="" srcSet="" />
+        </div>
+      </div>
+    </section>
+    <section className="Section5">
+      <div className="Section5Div">
+        <h3>Our program intelligently adapts to each student</h3>
+        <div>
+          <div className="Section5DivA">
+            <div className="Section5DivAPoint">
+              <div className="section5Icon">
+                <img
+                  src="https://dbl-live-website.imgix.net/o1qanoq3cFSuIN9UVJrTpmi89kHF9HkVl34xCSxt.svg?w=31&h=31"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div className="section5DivADivB">
+                <h5>Build Confidance</h5>
+                <p>
+                  Immersive, interactive learner-driven math lessons make
+                  students more confident and competent.
+                </p>
+                <a href="">More Info </a>
+              </div>
+            </div>
+            <div className="Section5DivAPoint">
+              <div className="section5Icon">
+                <img
+                  src="	https://dbl-live-website.imgix.net/VngRjyEvk8yq4kRPXKu3QCNaRkM17Aeld3tZ6ZAj.svg?w=31&h=31"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div className="section5DivADivB">
+                <h5>Intelligently Adaptive Learning</h5>
+                <p>
+                  Adjusts In real time to provide Individualized learning paths
+                  for every student.
+                </p>
+                <a href="">More Info</a>
+              </div>
+            </div>
+            <div className="Section5DivAPoint">
+              <div  className="section5Icon">
+                <img
+                  src="	https://dbl-live-website.imgix.net/Uxn9dHeOBsC0TimN4Vb2vyuKnV760dvS7rlIt71q.svg?w=31&h=31"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div className="section5DivADivB">
+                <h5>Curriculum and standards alignment</h5>
+                <p>
+                  lessons are designed by teachers, for teachers, and align with
+                  all state K-8 math standards
+                </p>
+                <a href="">More Info</a>
+              </div>
+            </div>
+            <div className="Section5DivAPoint">
+              <div  className="section5Icon">
+                <img
+                  src="https://dbl-live-website.imgix.net/58xTCabusiL6jHOXEzIZ7CRRHjHZoB1EuniDuEgF.svg?w=31&h=31"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div className="section5DivADivB">
+                <h5>Functional screen time </h5>
+                <p>
+                  Never feel gulty about screen time again with productive
+                  lessons students love.
+                </p>
+                <a href="">More Info</a>
+              </div>
+            </div>
+            <div className="Section5DivAPoint">
+              <div className="section5Icon">
+                <img
+                  src="	https://dbl-live-website.imgix.net/eMWy0d3uKb30OqdUQ8uL75r9vBQdt1hqbPEulDPb.svg?w=31&h=31"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div className="section5DivADivB">
+                <h5>See into the future</h5>
+                <p>
+                  Preview future student performance and adjust strategy as
+                  needed.
+                </p>
+                <a href="">More Info</a>
+              </div>
+            </div>
+            <div className="Section5DivAPoint">
+              <div  className="section5Icon">
+                <img 
+                  src="	https://dbl-live-website.imgix.net/v6CUPkntgXWamtM8kxN7E02EyZBtlo2nTMFnxpQI.svg?w=31&h=31"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div className="section5DivADivB">
+                <h5>Award-Winning</h5>
+                <p>
+                  Eduactors give BAOIAM two thumbs up. See what they're saying
+                </p>
+                <a href="">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      {/* <div class="hero-image"></div> */}
       {/* onClick={()=>{navigate("/chatBot")}} */}
       { 
         !showchatBot &&
