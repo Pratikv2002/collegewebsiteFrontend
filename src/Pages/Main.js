@@ -12,6 +12,7 @@ import StudyMaterial from './Study_Material/StudyMaterial';
 import TimeTable from './Time Table/Time_Table'
 import DeleteStudyMaterial from '../componant/AdminPanal/Pages/DeleteMaterial';
 import Team from '../componant/AdminPanal/Pages/Team';
+import Bot from './ChatBot/Bot';
 // import Home from './Home/Home';
 
 function Main() {
@@ -32,6 +33,7 @@ function Main() {
         <Route path="/team" element={<Team/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/googleMap" element={<Map/>}/>
+        <Route path="/chatBot" element={<Bot/>}/>
       </Routes>
     </BrowserRouter>
     </>
