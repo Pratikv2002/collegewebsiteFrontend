@@ -18,7 +18,7 @@ const WeatherInfo = (props) => {
   useEffect(() => {
     const fetchApi = async () => {
       console.log(city);
-      const url = `http://api.weatherapi.com/v1/current.json?key=6db8b9619d9d4bddb0e155940213004&q=${city}&aqi=yes`;
+      const url = `https://api.weatherapi.com/v1/current.json?key=6db8b9619d9d4bddb0e155940213004&q=${city}&aqi=yes`;
       const response = await fetch(url);
       const resJSON = await response.json();
       setData(resJSON);
