@@ -77,9 +77,10 @@ export default function StudyMaterial() {
   }
   // console.log(viewPdf)
   return (
+    <>
     <div>
       <Navbar />
-      <Footer/>
+     
 
       <div>
         <form action="" method="post" onSubmit={handleOnSubmit}>
@@ -156,7 +157,7 @@ export default function StudyMaterial() {
           </div>
         </form>
       </div>
-      <div style={{display:"flex",justifyContent:"center",justifyContent:"space-around"}}>
+      <div style={{display:"flex",justifyContent:"center",justifyContent:"space-around",flexWrap:"wrap"}}>
         <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><h3>PDF'S</h3>
         <div>
         {studyMaterial.length >= 0 ? (
@@ -251,8 +252,9 @@ export default function StudyMaterial() {
        {viewPdf ? <Viewer fileUrl={viewPdf} plugins={[newplugin]}/>:""}
         </Worker>
       </div>
-      
-    </div>
     
+    </div>
+      <Footer/>
+      </>
   );
 }
