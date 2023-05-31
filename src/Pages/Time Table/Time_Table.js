@@ -78,9 +78,11 @@ export default function StudyMaterial() {
   }
   // console.log(viewPdf)
   return (
+    <>
+   
     <div>
       <Navbar />
-      <Footer/>
+     
       <div>
         <form action="" method="post" onSubmit={handleOnSubmit}>
           <div
@@ -188,6 +190,7 @@ export default function StudyMaterial() {
       </div>
       
     </div>
-    
+    <Footer/>
+    </>
   );
 }
