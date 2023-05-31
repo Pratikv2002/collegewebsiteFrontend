@@ -82,7 +82,8 @@ export default function StudyMaterial() {
    
     <div>
       <Navbar />
-     
+      <h1 className="p-3" style={{textAlign:"center" ,fontFamily:"Titillium Web, sans-serif"}}>Search Time Table</h1>
+
       <div>
         <form action="" method="post" onSubmit={handleOnSubmit}>
           <div

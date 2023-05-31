@@ -22,6 +22,7 @@ const CompetitionRegistration = () => {
   return (
     <div>
         <Navbar/>
+        <h1 className="p-3" style={{textAlign:"center" ,fontFamily:"Titillium Web, sans-serif"}}>Register For Available Compitition</h1>
 
 <div className="container">
       <h2>Registration Form</h2>

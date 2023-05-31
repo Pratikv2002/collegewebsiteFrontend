@@ -82,6 +82,12 @@ border: 2px solid red;
 padding: 10px 15px;
 border-radius: 25px;
 }
+/* .botStyle{
+    position:absolute;
+    right: 100;
+     top: 20; 
+     z-index: 20;
+} */
 @media screen and (max-width: 1100px) {
    .section1Div{
        margin: 0px 25px;
@@ -171,6 +177,9 @@ border-radius: 25px;
     }
 }
 @media screen and (max-width: 500px){
+    .botStyle{
+        right: 20px !important;
+    }
    .sectionDivB img{
        margin-top: 10px;
        height: 200px;

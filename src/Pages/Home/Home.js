@@ -49,7 +49,7 @@ function Home() {
                 <p>
                   Notes are available in pdf, word, ppt,etc
                 </p>
-                <a href="">Click here.. </a>
+                <Link to="/studyMaterial">Click here..</Link>
               </div>
             </div>
             <div className="Section5DivAPoint">
@@ -65,7 +65,7 @@ function Home() {
                 <p>
                   Department-wise time table
                 </p>
-                <a href="">click here..</a>
+                <Link to="/timeTable">Click here..</Link>
               </div>
             </div>
             {/* <div className="Section5DivAPoint">
@@ -97,7 +97,7 @@ function Home() {
                 <p>
                   Never get lost
                 </p>
-                <a href="">Click here..</a>
+                <Link to="/googleMap">Click here..</Link>
               </div>
             </div>
             <div className="Section5DivAPoint">
@@ -126,7 +126,7 @@ function Home() {
       { 
         !showchatBot &&
         <Bounce bottom>
-         <div style={{ position: "absolute", right: 100, top: 20, zIndex: 20 }}>
+         <div className="botStyle" style={{ position: "absolute", right: 100, top: 20, zIndex: 20 }}>
            <Bot />
         </div>
         </Bounce>
