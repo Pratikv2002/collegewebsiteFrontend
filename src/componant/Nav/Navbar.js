@@ -9,7 +9,7 @@ function Navbar() {
   }
   return (
     <div>
-        <div  style={{color:"red",zIndex:"10" }} >
+        <div  style={{color:"red",zIndex:"50" }} >
       <header>
         <div className="header">
           <NavLink to="/" className="logo" style={{width:"auto",marginBottom:"0px"}}>
