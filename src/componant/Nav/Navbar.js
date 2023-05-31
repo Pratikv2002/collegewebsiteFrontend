@@ -62,7 +62,7 @@ function Navbar() {
             <li>
               <NavLink
                 className="projects navItem"
-                to="/compititionRegisteration"
+                to="/CompetitionRegistration"
                 tag={Link}
                 activestyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5,}}
@@ -121,12 +121,12 @@ function Navbar() {
             <li>
               <NavLink
                 className="projects navItem"
-                to="/compititionRegisteration"
+                to="/competitionRegistration"
                 tag={Link}
                 activestyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5,}}
               >
-                Compitition Registeration
+                Competition Registration
               </NavLink>
             </li>
             <li>

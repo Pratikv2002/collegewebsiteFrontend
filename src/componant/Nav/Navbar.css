@@ -1,5 +1,5 @@
 header{
-    box-shadow: 0px 0px 3px rgb(150, 11, 11);
+    box-shadow: 0px 0px 3px rgba(229, 29, 29, 0.924);
 }
 .menu-div2{
     text-align: center;
@@ -10,7 +10,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-   background-color: #ad7686;
+   background-color:#ffa07a50;
 }
 
 .logo{
@@ -18,7 +18,7 @@ header{
    
 }
 .logo-name{
-    color: rgb(62, 35, 35);
+    color: rgb(81, 42, 42);
     padding: 0px 30px;
     text-decoration: none;
     font-size: 25px;

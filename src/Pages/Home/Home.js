@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Navbar from "../../componant/Nav/Navbar";
 import "./Home.css";
-import Footer from "./footer";
+// import Footer from "./footer";
 import SocialMedia from "./SocialMedia";
 import { classNames } from "@react-pdf-viewer/core";
-import { Link } from "react-router-dom";
+import { Link, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Bot from "../ChatBot/Bot";
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
-import sectionOneImg from './home_image.jpg'
+import sectionOneImg from './home_image.gif'
 // import section5BImg from './home_image.jpg'
 function Home() {
   const navigate = useNavigate();
@@ -20,19 +20,11 @@ function Home() {
       <section className="section1">
       <div className="section1Div">
         <div className="sectionDivA">
-          <h1><span style={{color:"red"}}>MMIT</span> Knowledge Dynamics</h1>
-          <h3>Help Students achieve there Dreams</h3>
-          <h5>
-            Accelerate learing with proven digital math and reading programs
+          <h1 className="heading_logo"><span style={{color:"crimson"}}>MMIT</span> Knowledge Dynamics</h1>
+          <h5 className="Bio">
+          "Elevating Student Success. Your go-to platform for academic excellence, holistic growth, and staying ahead of the curve. Discover the power of knowledge in your journey with MMIT Knowledge Dynamics."
           </h5>
-          <div className="explore">
-            <h4>Explore:</h4>
-            <div className="exploreDiv">
-              <a href="">Class One</a>
-              <a href="">Class Two</a>
-              <a href="">Class Three</a>
-            </div>
-          </div>
+         
         </div>
         <div className="sectionDivB">
           <img src={sectionOneImg} alt="" srcSet="" />
@@ -41,7 +33,7 @@ function Home() {
     </section>
     <section className="Section5">
       <div className="Section5Div">
-        <h3>Our program intelligently adapts to each student</h3>
+        <h3>"The more you know, the more you can do." - <cite>Confucius</cite></h3>
         <div>
           <div className="Section5DivA">
             <div className="Section5DivAPoint">
@@ -53,12 +45,11 @@ function Home() {
                 />
               </div>
               <div className="section5DivADivB">
-                <h5>Build Confidance</h5>
+                <h5>Access study notes</h5>
                 <p>
-                  Immersive, interactive learner-driven math lessons make
-                  students more confident and competent.
+                  Notes are available in pdf, word, ppt,etc
                 </p>
-                <a href="">More Info </a>
+                <a href="">Click here.. </a>
               </div>
             </div>
             <div className="Section5DivAPoint">
@@ -70,15 +61,14 @@ function Home() {
                 />
               </div>
               <div className="section5DivADivB">
-                <h5>Intelligently Adaptive Learning</h5>
+                <h5>Get the latest time-table</h5>
                 <p>
-                  Adjusts In real time to provide Individualized learning paths
-                  for every student.
+                  Department-wise time table
                 </p>
-                <a href="">More Info</a>
+                <a href="">click here..</a>
               </div>
             </div>
-            <div className="Section5DivAPoint">
+            {/* <div className="Section5DivAPoint">
               <div  className="section5Icon">
                 <img
                   src="	https://dbl-live-website.imgix.net/Uxn9dHeOBsC0TimN4Vb2vyuKnV760dvS7rlIt71q.svg?w=31&h=31"
@@ -87,14 +77,13 @@ function Home() {
                 />
               </div>
               <div className="section5DivADivB">
-                <h5>Curriculum and standards alignment</h5>
+                <h5>Chatbot</h5>
                 <p>
-                  lessons are designed by teachers, for teachers, and align with
-                  all state K-8 math standards
+                  Interact with the chatbot
                 </p>
-                <a href="">More Info</a>
+                <a href="">click here..</a>
               </div>
-            </div>
+            </div> */}
             <div className="Section5DivAPoint">
               <div  className="section5Icon">
                 <img
@@ -104,12 +93,11 @@ function Home() {
                 />
               </div>
               <div className="section5DivADivB">
-                <h5>Functional screen time </h5>
+                <h5>Google Maps </h5>
                 <p>
-                  Never feel gulty about screen time again with productive
-                  lessons students love.
+                  Never get lost
                 </p>
-                <a href="">More Info</a>
+                <a href="">Click here..</a>
               </div>
             </div>
             <div className="Section5DivAPoint">
@@ -123,28 +111,12 @@ function Home() {
               <div className="section5DivADivB">
                 <h5>See into the future</h5>
                 <p>
-                  Preview future student performance and adjust strategy as
-                  needed.
+                  Virtual campus tour
                 </p>
-                <a href="">More Info</a>
+                <a href="">Available soon...</a>
               </div>
             </div>
-            <div className="Section5DivAPoint">
-              <div  className="section5Icon">
-                <img 
-                  src="	https://dbl-live-website.imgix.net/v6CUPkntgXWamtM8kxN7E02EyZBtlo2nTMFnxpQI.svg?w=31&h=31"
-                  alt=""
-                  srcSet=""
-                />
-              </div>
-              <div className="section5DivADivB">
-                <h5>Award-Winning</h5>
-                <p>
-                  Eduactors give BAOIAM two thumbs up. See what they're saying
-                </p>
-                <a href="">More Info</a>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -235,11 +207,24 @@ function Home() {
         </svg>
         Location
       </div>
+      
+      <footer style={{textAlign: 'center', position: 'relative',bottom:'5px', width: '100%',backgroundColor: 'coral', padding: '20px', color:'white',  }}>
+      <p>© 2023 by group no:10. All rights reserved.</p>
+      <p>Privacy Policy | Terms of Use | Contact Us</p>
+      <a href="https://www.facebook.com/mmit.lohgaon.90"> <i class="fa-brands fa-facebook" style={{color: "#3b5998",fontSize:'1.5rem'}} /> </a>
+      <a href="https://twitter.com/MMIT_Lohgaon"><i class="fab fa-twitter" style={{color: "#00acee",fontSize:'1.5rem'}} /></a>
+      <a href ="https://www.instagram.com/mmitlohgaonpune/"> <i class="fa-brands fa-instagram" style={{color: "#962fbf",fontSize:'1.5rem'}} />  </a>
+      <a href="https://www.linkedin.com/in/mmit-lohgaon-b45855154/"><i class="fa-brands fa-linkedin" style={{color: "#0a66c2",fontSize:'1.5rem'}} /> </a>
 
+    </footer>
       <SocialMedia />
-      <Footer />
+     
     </div>
+    
   );
+  
 }
+
+
 
 export default Home;

@@ -13,6 +13,7 @@ import TimeTable from './Time Table/Time_Table'
 import DeleteStudyMaterial from '../componant/AdminPanal/Pages/DeleteMaterial';
 import Team from '../componant/AdminPanal/Pages/Team';
 import Bot from './ChatBot/Bot';
+import CompetitionRegistration from './CompetitionRegistration/CompetitionRegistration';
 // import Home from './Home/Home';
 
 function Main() {
@@ -29,6 +30,7 @@ function Main() {
         <Route path="/UploadMaterial" element={<UploadMaterial/>}/>
         <Route path="/studyMaterial" element={<StudyMaterial/>}/>
         <Route path="/TimeTable" element={<TimeTable/>}/>
+        <Route path="/competitionRegistration" element={<CompetitionRegistration/>}/>
         <Route path="/deleteStudyMaterial" element={<DeleteStudyMaterial/>}/>
         <Route path="/team" element={<Team/>}/>
         <Route path="/home" element={<Home/>}/>
