@@ -22,14 +22,14 @@ const CompetitionRegistration = () => {
   return (
     <div>
         <Navbar/>
-        <h1 className="p-3" style={{textAlign:"center" ,fontFamily:"Titillium Web, sans-serif"}}>Register For Available Compitition</h1>
 
-<div className="container">
-      <h2>Registration Form</h2>
+<div className="containerr">
+      <h2 className='forrm'>Registration Form</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="fullName">Full Name</label>
+          <label className='labelrr' htmlFor="fullName">Full Name</label>
           <input
+            className='inputrr'
             type="text"
             id="fullName"
             value={fullName}
@@ -37,9 +37,10 @@ const CompetitionRegistration = () => {
             required
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
+        <div className="form-grouprr">
+          <label className='labelrr' htmlFor="email">Email</label>
           <input
+            className='inputrr'
             type="email"
             id="email"
             value={email}
@@ -47,9 +48,10 @@ const CompetitionRegistration = () => {
             required
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
+        <div className="form-grouprr">
+          <label className='labelrr' htmlFor="password">Password</label>
           <input
+            className='inputrr'
             type="password"
             id="password"
             value={password}
